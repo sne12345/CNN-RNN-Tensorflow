@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.utils import to_categorical
 
-def Visulaize(histories, key='loss'):
+def Visualize(histories, key='loss'):
     for name, history in histories:
         val = plt.plot(history.epoch, history.history['val_'+key],
                    '--', label=name.title()+' Test')
@@ -16,4 +16,3 @@ def Visulaize(histories, key='loss'):
     plt.legend()
     plt.xlim([0,max(history.epoch)])
     plt.savefig("plot.png")
-#     elice_utils.send_image("plot.png")
