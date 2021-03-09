@@ -1,0 +1,323 @@
+<!-- 캠핑카렌트(rent_camping.html) -->
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <title>SAVECAR - 캠핑카 렌트</title>
+
+    <!-- Style -->
+    <link th:href="@{/css/camping.css}" rel="stylesheet">
+
+    <script>
+        function toggleImg(id) {
+            let before = document.getElementById("headerImg").src;
+            let tmp = document.getElementById(id).src;
+            document.getElementById("headerImg").src = tmp;
+            document.getElementById(id).src = before;
+        }
+    </script>
+</head>
+
+<div layout:fragment="content">
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-caption">
+                        <h2 class="page-title">Campersave Motorhome</h2>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--feature section -->
+    <section id="feature" class="feature sections">
+        <div class="container text-center">
+            <div class="row padding-bottom-60">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pinside30">
+                    <h3><a href="/europe">Europe VIP CAMPER</a></h3>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pinside30">
+                    <h3><a href="/liomousine">Liomousine VIP CAMPER</a></h3>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pinside30">
+                    <h3><a href="/travel">Travel VIP CAMPER</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-bottom-60">
+                    <h1>Europe VIP CAMPER</h1>
+                    <h3>모터홈의 디럭스풍 디자인</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="bg-light pinside30">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pinside10">
+                                <h3>CAPMER 명</h3>
+                                <h3>디럭스 Motorhome</h3>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pinside10">
+                                <h3>디젤/Auto</h3>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pinside10">
+                                <h3>면허 종류</h3>
+                                <h3><input type="radio" id="type1" name="car-type" checked="checked" readonly> 1종 보통
+                                <input type="radio" id="type2" name="car-type" readonly> 2종 보통</h3>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pinside10">
+                                <h3>인원 (승차/취침)</h3>
+                                <h3>5인승/5인취침</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 사진 -->
+            <div class="row text-center pinside30">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row padding-bottom-20">
+                        <img th:src="@{/img/camping-car1.jpg}" id="headerImg" width="70%" height="70%">
+                    </div>
+                    <div class="row">
+                        <img th:src="@{/img/IMG_0360.JPG}" id="carImg1" width="10%" height="100%" onclick="toggleImg('carImg1')">
+                        <img th:src="@{/img/IMG_0361.JPG}" id="carImg2" width="10%" height="100%" onclick="toggleImg('carImg2')">
+                        <img th:src="@{/img/IMG_0362.JPG}" id="carImg3" width="10%" height="100%" onclick="toggleImg('carImg3')">
+                        <img th:src="@{/img/IMG_0363.JPG}" id="carImg4" width="10%" height="100%" onclick="toggleImg('carImg4')">
+                        <img th:src="@{/img/IMG_0364.JPG}" id="carImg5" width="10%" height="100%" onclick="toggleImg('carImg5')">
+                        <img th:src="@{/img/IMG_0367.JPG}" id="carImg6" width="10%" height="100%" onclick="toggleImg('carImg6')">
+                        <img th:src="@{/img/IMG_0368.JPG}" id="carImg7" width="10%" height="100%" onclick="toggleImg('carImg7')">
+                        <img th:src="@{/img/IMG_0370.JPG}" id="carImg8" width="10%" height="100%" onclick="toggleImg('carImg8')">
+                        <img th:src="@{/img/IMG_0371.JPG}" id="carImg9" width="10%" height="100%" onclick="toggleImg('carImg9')">
+                        <img th:src="@{/img/IMG_0372.JPG}" id="carImg10" width="10%" height="100%" onclick="toggleImg('carImg10')">
+                        <img th:src="@{/img/IMG_0374.JPG}" id="carImg11" width="10%" height="100%" onclick="toggleImg('carImg11')">
+                        <img th:src="@{/img/IMG_0375.JPG}" id="carImg12" width="10%" height="100%" onclick="toggleImg('carImg12')">
+                        <img th:src="@{/img/IMG_0376.JPG}" id="carImg13" width="10%" height="100%" onclick="toggleImg('carImg13')">
+                        <img th:src="@{/img/IMG_0377.JPG}" id="carImg14" width="10%" height="100%" onclick="toggleImg('carImg14')">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 10px;">
+                    <div class="bg-light pinside30" style="margin-top: 20px;">
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 요금</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="overflow-x: auto;">
+                                <table class="col-lg-12 col-md-12 col-sm-12 col-xs-12 type11 text-center">
+                                    <thead>
+                                    <tr>
+                                        <th scope="cols" colspan="2">비수기</th>
+                                        <th scope="cols" colspan="2">성수기</th>
+                                        <th scope="cols">Deposit</th>
+                                        <th scope="cols">월렌트</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>주중</td>
+                                        <td>주말</td>
+                                        <td>주중</td>
+                                        <td>주말</td>
+                                        <td rowspan="2">20만원</td>
+                                        <td rowspan="4">5,460,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>390,000</td>
+                                        <td>390,000</td>
+                                        <td>520,000</td>
+                                        <td>520,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5일</td>
+                                        <td>7일</td>
+                                        <td>10일</td>
+                                        <td>15일</td>
+                                        <td rowspan="2">상담</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,560,000</td>
+                                        <td>1,950,000</td>
+                                        <td>2,535,000</td>
+                                        <td>3,510,000</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 기본 옵션</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <p>5인 탑승, 5인 취침</p>
+                                <p>2종 보통도 운전 가능</p>
+                                <p>프리미엄 인산철 배터리 1080A</p>
+                                <p>한전충전, 주행충전 50A, 태양광 충전 시스템[MPPT 컨트롤]</p>
+                                <p>주유소 충전소 이용가능한 대용량 LPG 사용</p>
+                                <p>인버터 3000W</p>
+                                <p>맥스팬, 샤워실과 화장실이 분리된 넓은 럭셔리 공간</p>
+                                <p>청수탱크 114L, 그레이워터 102L, 블랙워터 106L</p>
+                                <p>4.2M 전자동 파워어닝(파워어닝:바람이 불면 자동으로 접히는 기능)</p>
+                                <p>넓은 수납공간 - 레포트 용품 적재 가능</p>
+                            </div>
+                        </div>
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 시설</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <p>캠핑의자 6ea, 캠핑테이블 1ea, 휴대용버너, 커피포트</p>
+                                <p>객실샤워실, 화장실, 욕실용품, 세면도구[샴푸 린스 바디워시], </p>
+                                <p>전자레인지, 드라이기, 냉장고, TV, 에어컨</p>
+                                <p>침대, 식탁, 이불세트[5인용], 코펠 6인 [그림의4인 + 2인추가]</p>
+                                <p>노래방 무선마이크, 핸드폰 충전기, 위성안테나</p>
+                                <p>어닝, 물충전호수, 외부샤워기, 무시동히터,</p>
+                                <p>인버터, 인산철배터리, 한전충전기, 주행충전</p>
+                                <p>숯불기본세트 [그릴, 점화기토치]</p>
+                                <p>전기밥통, 취사도구</p>
+                            </div>
+                        </div>
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 추가서비스</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <p>장작 & 숯불세트[장작, 숯, 숯판, 그릴, 점화기토치] 3만원</p>
+                                <p>빔프로젝트+블루투스 스피커+유압식거치대 3만원</p>
+                                <p>전동킥보드[최대80km, 제품명] 3만원</p>
+                                <p>원터치 텐트[제품명] 1만원</p>
+                                <p>침대의자[사이즈] 1만원</p>
+                                <p>필립스 led 조명랜턴 1만원</p>
+                                <p>전기매트[캠핑카용] 1만원</p>
+                                <p>이불세트추가 1만원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-light pinside30" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h2>예약자 정보 입력</h2>
+                                <hr>
+                                <label id="rent-title" class="control-label" for="name" value="캠핑카"></label>
+                                <form name="reservation_info" id="rentProduct" value="유럽">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group has-feedback">
+                                                <label class="control-label" for="name">이름</label>
+                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" id="reservation-detail-name" placeholder="예약자의 성함을 입력해주세요.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group has-feedback">
+                                                <label class="control-label" for="phone">연락처</label>
+                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                    <input type="text" class="form-control" id="reservation-detail-phone" placeholder="예약자 연락처 ex) 010-0000-0000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group has-feedback">
+                                                <label class="control-label" for="textarea">요청 사항</label>
+                                                <textarea class="form-control" id="reservation-detail-details" name="textarea" rows="6" placeholder="요청사항을 입력해주세요."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group has-feedback">
+                                                <p><font color="red" style="font-weight: bold;"> * 21세 이상은 별도 문의</font></p>
+                                                <p class="text-center"><input type="checkbox" id="agree" name="agree"> 개인정보 수집 및 이용에 동의합니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group text-center">
+                                                <a class="btn1 btn1-default" onclick="make_reservation()" href="#">예약하기 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light pinside30" style="margin-top: 20px;">
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 렌트정책</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <p><i class="fas fa-star"></i>인수 및 반납</p>
+                                <p>평일 및 토요일 :  09 : 00 ~ 18 : 00</p>
+                                <p>일요일 & 국경일 : 배차불가, 회차는 무인 또는 다음날 오전 9시 반납</p>
+                                <p>방문배회차지 : 장지역[가든파이브], 복정역[강남자동차매매단지] 中 당사 지정장소</p>
+                                <p>방문기준이며 배회차시 별도의 요금이 발생합니다.</p>
+                                <br>
+                                <p><i class="fas fa-star"></i>예약 안내</p>
+                                <p>요금은 24시간 기준으로 캠핑카대여 특성상 체크인 & 체크아웃 시간으로 운영하여야 하나</p>
+                                <p>고객의 편의중심으로 24시간 기준으로 요금을 책정하였습니다.</p>
+                                <p>예약금은 디파짓 전액을 입금하시고 대여료는 신용카드 및 현금이 가능합니다.</p>
+                                <p>VAT별도로 자차요금이 포함 되어 있습니다.</p>
+                                <p>입금계좌 : 하나은행 810-626121-01404 ㈜세이브카</p>
+                            </div>
+                        </div>
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 보험사항</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <p><i class="fas fa-star"></i>보험 안내</p>
+                                <p>대인 무한 대물 2천 자손 1.5천 자차 2천만원까지</p>
+                                <p>자차포함 : 차대차사고, 캠핑카 내부 가구 제외, 자기부담금 50~200만원[과실30%이내]</p>
+                                <br>
+                                <p><i class="fas fa-star"></i>운전자 조건</p>
+                                <p>26세기준 21세 별도 문의</p>
+                                <p>운전면허 1종과 2종 가능차량이 상이하므로 꼭 확인부탁드립니다.</p>
+                            </div>
+                        </div>
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 이용규칙</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <p>1) 금연차량을 원칙으로 운영중입니다.</p>
+                                <p>2) 차량청소 : 오물통과 각종 쓰레기는 비우시고 반납[패널티 3만원]</p>
+                                <p>3) 사고, 정비로 대여가 불가능 할 수 있으며 이에 대한 손해배상을 청구 할 수 없습니다.</p>
+                                <p>4) 계절별로 캠핑설비의 특성상 관리에 주의가 필요하며 일부 시설은 사용이 제한 될 수 있습니다.</p>
+                                <p>5) 배차전 사용설명 영상이나 설명서를 미리 숙지하시고 배차시 사용설명을 교육 받으셔야 합니다^^</p>
+                                <p>6) 서비스품목이 추가되거나 예약완료 될 수 있으니 상담시 문의바랍니다.</p>
+                                <p>7) 차량별 옵션이 추가되거나 차이가 발생 할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="row pinside30">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h2>CAPMER 환불정책</h2>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <p>1) 31일전 취소 : 100%환불</p>
+                                <p>2) 30일전 취소 : 30% 수수료 부과</p>
+                                <p>3) 15일전 취소 : 40% 수수료 부과</p>
+                                <p>4) 7일전 취소 : 50% 수수료 부과</p>
+                                <p>5) 3일전 취소 : 80% 수수료 부과</p>
+                                <p>6) 2일전 취소 : 환불불가</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
