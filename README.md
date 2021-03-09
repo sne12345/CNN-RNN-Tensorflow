@@ -6,4 +6,5 @@
 2. 자연어 처리
 
 
-# Traffic-Sign
+# [Project] 교통 표지판 이미지 분류
+
